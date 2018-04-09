@@ -41,7 +41,7 @@ def shortest_path():
         g[edge[1]][edge[0]] = edge[2]
     unvisited = {node: None for node in nodes} #using None as +inf
     visited = {}
-    current = 'B'
+    current = nodes[0]
     currentDistance = 0
     unvisited[current] = currentDistance
     while True:
